@@ -1,0 +1,14 @@
+{
+  "name": "smart-travel-pwa",
+  "version": "1.0.0",
+  "description": "smart traveller hackathon project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arif and Muiz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
