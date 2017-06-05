@@ -6,6 +6,7 @@
     <title>The Best Online Travel Insurance | AXA Malaysia</title>
     <link rel="canonical" href="https://digital.axa.com.my/google-hackathon-2017" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="manifest" href="../manifest.json">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -21,6 +22,19 @@
     <style amp-custom>
       <% include ../public/stylesheets/style.css %>
     </style>
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../scripts/sw.js').then(function(registration) {
+              // Registration was successful
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+              // registration failed :(
+              console.log('ServiceWorker registration failed: ', err);
+            });
+          });
+        }
+    </script>
   </head>
   <body>
     <header>
